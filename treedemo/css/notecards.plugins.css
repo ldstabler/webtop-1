@@ -1,0 +1,100 @@
+
+/* Icon buttons plugin
+ ----------------------------------*/
+ul.ctrl_panel {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+.ctrl_panel li {
+	display: inline;
+}
+
+.nc_icon {
+	background: #fff url(images/ui-icons_777777_256x240.png) no-repeat scroll;
+	margin: 1px;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	border: 1px solid #c5c5c5;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	display: inline-block;
+}
+.nc_icon.nc_icon_hover {
+	background-image: url("images/ui-icons_cc0000_256x240.png");
+	border: 1px solid #e5e5e5;
+}
+
+
+
+
+/* used in tree widget*/
+
+.nc_tree { margin: 0 0 0 4px; }
+/* 2 trees will be constructed, one with id "regular_tree" for the regular, the other "free_tree" for the free nodes removed from the regular tree;*/
+.nc_tree { display: none; }
+.nc_tree.show{display: block;}
+.nc_tree,.nc_tree ul {
+  list-style-type: none; 
+  position: relative;
+  padding: 0;
+  cursor: default;
+  border-left: 1px dotted #34495e;
+}
+
+ .nc_tree ul {margin: 0; }
+ .nc_tree ul {display: none;}
+ .nc_tree ul.show { display: block; }
+ 
+
+
+.nc_tree li {
+  position: relative;
+  margin: 0 0 0 10px;
+  padding: 2px 0 2px 0;
+}
+
+/* extend a line to the list item */
+.nc_tree li:before {
+  position: absolute;
+  top: 10px; left: -9px; height: 1px; width: 5px;
+  border-top: 1px dotted #34495e;
+  content: ' '; 
+} 
+
+/* erase all lines for last item */
+.nc_tree li:last-child:after {
+  position: absolute;
+  top: 17px; left: -13px; bottom: 0; width: 7px;
+  /*background-color: white;*/
+  content: ' ';
+} 
+
+
+/* add a div block on the dot cross as expander widget */
+
+.nc_tree .signblock {
+  background: #fff url(images/icons.png) no-repeat scroll;
+  position: absolute;
+  top: 8px; left: -15px;
+  height: 9px; width: 9px;
+  cursor: pointer;
+}
+.nc_tree .signblock.hide { display:none }
+.nc_tree .signblock:hover { background-color: #aaa; }
+/*plus sign image as the div block background*/ 
+.nc_tree .signblock { background-position: -64px -4px;}
+/*negative sign image as the div block background*/ 
+.nc_tree .signblock.negative { background-position: -78px -4px; }
+
+
+.nc_label.selected {background-color: #2ecc71}
+.nc_label.prev_selected {background-color: #cfffc4}
+.nc_label:hover {background-color: #8eeca1}
+
+#nc_treecontainer {overflow : auto;}
+
