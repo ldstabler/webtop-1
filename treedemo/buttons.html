@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>FreeNoteCards - Organize your note cards in multiple dimensions.</title>
+		<link href="css/buttons.css" rel="stylesheet">
+
+	</head>
+	<body>
+		
+				<ul id="ctrlpanel_icon_main" class="ctrl_panel">
+					<li>
+						<div  id="btn_create" ></div>
+					</li>
+					<li>
+						<div  id="btn_update" ></div>
+					</li>
+					<li>
+						<div  id="btn_move" ></div>
+					</li>					
+					<li>
+						<div  id="btn_delete" ></div>
+					</li>
+				</ul>
+				<ul id="ctrlpanel_icon_p2" class="ctrl_panel">					
+					<li>
+						<div  id="btn_release" ></div>
+					</li>
+					<li>
+						<div  id="btn_releasebefore" ></div>
+					</li>
+					<li>
+						<div  id="btn_cancel" ></div>
+					</li>
+				</ul>
+			
+
+		<script src="js/jquery-3.1.1.js"></script>
+		<script src="js/button.js"></script>
+		<script>
+			( function($) {
+					
+					$("#ctrlpanel_icon_p2").css("display", "none");
+					$("#btn_create").nc_iconButton("ui-icon-circle-plus", "Create.", function() {
+						alert("btn_create clicked");
+					});
+					$("#btn_update").nc_iconButton("ui-icon-tag", "Upate.", function() {
+						alert("btn_update clicked");
+					});
+					$("#btn_move").nc_iconButton("ui-icon-transferthick-e-w", "Move...", function() {
+						alert("btn_move clicked");
+						$("#ctrlpanel_icon_main").css("display", "none");
+						$("#ctrlpanel_icon_p2").css("display", "inline");
+					});
+					$("#btn_delete").nc_iconButton("ui-icon-trash", "Delete", function() {
+						alert("btn_delete clicked")
+					});
+					$("#btn_release").nc_iconButton("ui-icon-arrowthickstop-1-n", "Release to...", function() {
+						alert("btn_release clicked");
+						$("#ctrlpanel_icon_p2").css("display", "none");
+						$("#ctrlpanel_icon_main").css("display", "inline");
+					});
+					$("#btn_releasebefore").nc_iconButton("ui-icon-arrowthickstop-1-e", "Release before...", function() {
+						alert("btn_releasebefore clicked");
+						$("#ctrlpanel_icon_p2").css("display", "none");
+						$("#ctrlpanel_icon_main").css("display", "inline");
+					});
+					$("#btn_cancel").nc_iconButton("ui-icon-close", "Cancel", function() {
+						alert("btn_cancel clicked");
+						$("#ctrlpanel_icon_p2").css("display", "none");
+						$("#ctrlpanel_icon_main").css("display", "inline");
+					});
+
+				}(jQuery));
+		</script>
+	</body>
+</html>
