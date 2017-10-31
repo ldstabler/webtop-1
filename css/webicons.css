@@ -1,0 +1,33 @@
+.webicon {
+	margin: 1px;
+	display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    text-indent: -99999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+	width: 36px;
+	height: 36px;
+	background-image: url("images/webicons.png");
+}
+
+.webicon-blue-cross { background-position: 0 0; }
+.webicon-scr-philips { background-position: -36px 0; }
+.webicon-gear { background-position: -72px 0; }
+.webicon-mail { background-position: -108px 0; }
+.webicon-chat { background-position: -144px 0; }
+.webicon-device { background-position: -180px 0; }
+.webicon-gearset { background-position: -216px 0; }
+.webicon-user { background-position: -252px 0; }
+.webicon-user-group { background-position: -288px 0; }
+.webicon-earth { background-position: -324px 0; }
+.webicon-clock-add { background-position: 0 -36px; }
+.webicon-clock-info { background-position: -36px -36px; }
+.webicon-clock-warning { background-position: -72px -36px; }
+.webicon-document-edit { background-position: -108px -36px; }
+.webicon-document { background-position: -144px -36px; }
+.webicon-document-new { background-position: -180px -36px; }
+.webicon-stop { background-position: -216px -36px; }
+.webicon-money { background-position: -252px -36px; }
+.webicon-disc { background-position: -288px -36px; }
+.webicon-info { background-position: -324px -36px; }

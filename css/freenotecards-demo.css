@@ -1,0 +1,32 @@
+#demo_sign {	
+	position: relative;
+	float: left;
+	margin: 1px;
+	padding: 1px;
+	display: inline;
+	font-size: 50px;
+	color:rgb(52,73,94);
+	vertical-align:top;
+}
+
+#demo_logo {	
+	display: inline-block;
+	background-repeat: no-repeat;
+	width: 64px;
+	height: 64px;
+	background-image: url("images/logo.png");
+}
+
+ 
+
+#demo_panel {	
+	position: relative;
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: inline;
+	width: 100px;
+	cursor: default;
+	
+}
+

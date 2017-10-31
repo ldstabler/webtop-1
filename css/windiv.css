@@ -1,0 +1,235 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #F0FFF0; 
+}
+
+#windiv_container {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#windiv_workarea {
+	position: absolute; /* The position is specified elsewhere */	
+	margin: 2px;
+	top: 64px;
+	width: 100%;
+}
+
+#windiv_toolbar {
+	position: absolute; /* The position is specified elsewhere */	
+	display: inline;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 64px; /* Window size, not including borders */
+	background-color: #E6E6FA; /* Use system titlebar color */
+	/*border: outset silver 1px;  Titlebar has border on bottom only */
+	margin: 0px;
+	padding: 0px;
+}
+
+#windiv_tools {		
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0;
+	display: inline;
+	cursor: default;
+	
+}
+
+#windiv_mins {		
+	position: relative;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+	cursor: default;
+}
+
+.windiv_mins_btn {		
+	position: relative;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+	border-left: outset silver 1px;
+	border-bottom: outset silver 1px;
+	cursor: default;	
+}
+
+.windiv_mins_btn:hover {
+	border-left: groove silver 1px;
+	border-bottom: groove silver 1px;	
+	border-right: groove silver 1px;
+	border-top: groove silver 1px;
+}
+
+.windiv_mins_title {		
+	position: relative;
+	float: right;
+	display: inline;
+}
+
+.windiv {/* Specifies size and border of the window */
+	position: absolute; /* The position is specified elsewhere */
+	left: 10px;
+	top: 10px;
+	width: 300px;
+	height: 200px; /* Window size, not including borders */
+	border: outset gray 1px; /* Note 3D "outset" border effect */
+	margin: 0px;
+	padding: 0px;
+}
+
+.windiv_right {/* Specifies position, size, and style of the titlebar */
+	position: absolute; /* It's a positioned element */
+	top: 0px;
+	left: 296px;
+	height: 196px; 
+	width: 4px; 
+	background-color: silver; /* Use system titlebar color */
+	margin: 0px;
+	padding: 0px;
+	cursor: e-resize;
+}
+
+.windiv_bottom {/* Specifies position, size, and style of the titlebar */
+	position: absolute; /* It's a positioned element */
+	top: 196px;
+	left: 0px;
+	height: 4px; 
+	width: 296px; 
+	background-color: silver; /* Use system titlebar color */
+	margin: 0px;
+	padding: 0px;
+	cursor: s-resize;
+}
+
+.windiv_corner {/* Specifies position, size, and style of the titlebar */
+	position: absolute; /* It's a positioned element */
+	top: 196px;
+	left: 296px;
+	height: 4px; 
+	width: 4px; 
+	background-color: silver; /* Use system titlebar color */
+	margin: 0px;
+	padding: 0px;
+	cursor: se-resize;
+}
+
+
+.windiv_titlebar {/* Specifies position, size, and style of the titlebar */
+	position: absolute; /* It's a positioned element */
+	display: inline;
+	top: 0px;
+	left: 0px;
+	height: 19px; /* titlebar is 18px + padding and borders */
+	width: 296px; /* 290 + 5px padding on left and right = 300 */
+	background-color: ActiveCaption; /* Use system titlebar color */
+	border-bottom: groove black 1px; /* Titlebar has border on bottom only */
+	margin: 0px;
+	padding: 0px;
+	cursor: move; 
+	/*text unselectable*/
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.windiv_caption {	
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+.windiv_panel {	
+	position: relative;
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: inline;
+	width: 50px;
+	cursor: default;
+	
+}
+
+.windiv_content {/* Specifies size, position and scrolling for window content */
+	position: absolute; /* It's a positioned element */
+	top: 20px; /* 18px title+2px border+3px+2px padding */
+	height: 176px; /* 200px total - 25px titlebar - 10px padding */
+	width: 296px; /* 300px width - 10px of padding */	
+	margin: 0px;
+	padding: 0px;
+	overflow: auto; /* give us scrollbars if we need them */
+	background-color: #ffffff; /* White background by default */
+}
+
+
+.windiv_icon {	
+	float: right;
+	background: ActiveCaption url(images/icons.png) no-repeat scroll;
+	height: 9px;
+	width: 9px;
+	margin: 2px;
+	border: 1px solid gray;
+}
+.windiv_icon:hover {
+	border: 1px solid silver;
+}
+
+.windiv_min {
+	background-position: -8px -4px;
+}
+.windiv_res {
+	background-position: -22px -4px;
+}
+.windiv_max {
+	background-position: -36px -4px;
+}
+.windiv_close {
+	background-position: -50px -4px;
+}
+.windiv_plus {
+	background-position: -64px -4px;
+}
+.windiv_minus {
+	background-position: -78px -4px;
+}
+.windiv_shape {
+	float: left;
+	background-position: -92px -4px;
+	margin: 4px;
+	border: none;
+}
+.windiv_shape:hover {
+	border: none;
+}
+.windiv_slash {
+	background-position: -106px -4px;
+}
+.windiv_dot {
+	background-position: -120px -4px;
+}
+.desktop_div {	
+	width: 108px; 
+	text-align: center;
+	cursor: pointer;
+	margin: 3px;
+	display: inline-block;
+}
+.desktop_div:hover {
+	 
+	background-color: gray;
+	opacity: 0.3;
+    filter: alpha(opacity=30);
+}
