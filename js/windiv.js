@@ -302,6 +302,11 @@ function test() {
 	windiv_new("Image", str);
 	//loadScript("helloworld.js", sayhello);
 }
+function test() {
+	str = '<img src="https://ldstabler.github.io/WebTop/img/mor/Wallpaper.jpg" alt="Mountain View" style="width:300px;height:250px;" onclick="sayhello();">';
+	windiv_new("Image", str);
+	//loadScript("helloworld.js", sayhello);
+}
 
 function loadScript(url, callback)
 {
