@@ -4,3 +4,6 @@
 #demo_sign{
   font-family: arial;
 }
+html{
+  cursor: url(modified/default.png),auto;
+}
