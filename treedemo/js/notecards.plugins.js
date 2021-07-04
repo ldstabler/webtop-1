@@ -39,11 +39,11 @@
 			/*folder11*/
 			dummy111 = '{"key":"dummy111","name":"dummy111", "subnodes":[]}';
 			dummy112 = '{"key":"dummy112","name":"dummy112", "subnodes":[]}';
-			user.bin = '{"key":"user.bin","name":"user.bin","subnodes":[' + dummy111 + ',' + dummy112 + ']}';
-			info = '{"key":"info","name":"info", "subnodes":[]}';
-			disc = '{"key":"disc","name":"disc","subnodes":[' + dummy11 + ',' + disc + ',' + info + ']}';
-			removable = '{"key":"removable","name":"removable", "subnodes":[]}';
-			root = '{"key":"root","name":"root","subnodes":[' + disc + ',' + removable + ']}';
+			folder11 = '{"key":"folder11","name":"folder11","subnodes":[' + dummy111 + ',' + dummy112 + ']}';
+			dummy12 = '{"key":"dummy12","name":"dummy12", "subnodes":[]}';
+			folder1 = '{"key":"folder1","name":"folder1","subnodes":[' + dummy11 + ',' + folder11 + ',' + dummy12 + ']}';
+			dummy1 = '{"key":"dummy1","name":"dummy1", "subnodes":[]}';
+			root = '{"key":"root","name":"root","subnodes":[' + folder1 + ',' + dummy1 + ']}';
 			return root;
 		};
 
