@@ -24,3 +24,6 @@ function installScript(src){
 	document.head.appendChild(script);	
 	alert(src + " script is installed successfully.");
 }
+function liamS() {
+	html = "<h1>Test</h1>";
+}
