@@ -8,9 +8,10 @@
     background-repeat: no-repeat;
 	width: 36px;
 	height: 36px;
+	background: url(images/icons.png);
 }
 
-.webicon-blue-cross { background-image: url(https://ldstabler.github.io/resources/JS.js.png) }
+.webicon-blue-cross { background-position: 0 0; }
 .webicon-scr-philips { background-position: -36px 0; }
 .webicon-gear { background-position: -72px 0; }
 .webicon-mail { background-position: -108px 0; }
