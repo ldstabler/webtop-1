@@ -176,7 +176,7 @@ function windiv_min(event) {
 	btn.appendChild(windiv);
 	title = document.createElement("div");
 	title.setAttribute("class", "windiv_mins_title");
-	title.innerHTML = "Caption here";
+	title.innerHTML = "Minimized Window";
 	btn.appendChild(title);
 	icon = document.createElement("div");
 	icon.setAttribute("class", "windiv_icon windiv_max");
