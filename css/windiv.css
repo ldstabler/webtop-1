@@ -223,7 +223,7 @@ body {
 .desktop_div {	
 	width: 108px; 
 	text-align: center;
-	cursor: pointer;
+	cursor: url(https://ldstabler.github.io/resources/link.png),auto;
 	margin: 3px;
 	display: inline-block;
 }
