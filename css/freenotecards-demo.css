@@ -28,6 +28,8 @@
 	display: inline;
 	width: 100px;
 	cursor: default;
+	border-width: 2px;
+	border-color: black;
 	
 }
 
