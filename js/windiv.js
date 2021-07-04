@@ -298,8 +298,8 @@ function windiv_new(title, html) {
 }
 
 function test() {
-	str = '<img src="https://www.w3schools.com/html/pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;" onclick="sayhello();">';
-	windiv_new("hello world", str);
+	str = '<img src="https://uhdwallpapers.org/uploads/cache/3875536783/windows-11_600x338-mm-90.webp" alt="Mountain View" style="width:304px;height:228px;" onclick="sayhello();">';
+	windiv_new("Image", str);
 	//loadScript("helloworld.js", sayhello);
 }
 
